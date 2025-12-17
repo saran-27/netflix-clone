@@ -1,0 +1,87 @@
+.NavBar{
+    width: 100%;
+    padding: 42px 10px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+    gap: 20%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 10%, transparent);
+    color: #e5e5e5;
+    font-size: 14px;
+}
+.Nav-left{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.Nav-left img{
+    width: 90px;
+}
+.Nav-left ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.Nav-left ul li{
+    cursor: pointer;
+}
+.Nav-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.Nav-right .icons{
+    width: 20px;
+    cursor: pointer;
+}
+.NavBar-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.NavBar-profile .profile{
+    border-radius: 4px;
+    width: 35px;
+}
+.NavBar-profile .dropdown{
+    position: absolute;
+    top: 100%;
+    right:0 ;
+    width: max-content;
+    padding: 18px 22px;
+    background: #191919;
+    z-index: 1;
+    text-decoration: underline;
+    border-radius: 2px;
+    display: none;
+}
+.NavBar-profile .dropdown p{
+    font-size: 15px;
+    cursor: pointer;
+}
+.NavBar-profile:hover .dropdown{
+    display: block;
+}
+.Nav-Dark{
+    background: #141414;
+}
+
+
+@media (max-width: 767px)
+{ 
+    .NavBar {
+        width: 100%;
+        padding: 26px 5px !important;
+        display: flex;
+        justify-content: flex-start;
+        position: fixed;
+        z-index: 1;
+        gap: 30px;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 10%, transparent);
+        color: #e5e5e5;
+        font-size: 14px;
+    }
+}
